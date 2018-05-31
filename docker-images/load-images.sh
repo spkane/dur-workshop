@@ -16,4 +16,4 @@ docker image load spkane-mybot-latest.tar
 docker image load spkane-starwars-latest.tar
 docker image load spkane-train-os-latest.tar
 docker image load traefik-latest.tar
-
+docker image load quantum-game.tar

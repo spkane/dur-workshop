@@ -1,7 +1,7 @@
 #!/usr/bin/env powershell
 
-# docker image pull 127.0.0.1:5000/myuser/jenkins-class:latest
-docker image save 127.0.0.1:5000/myuser/jenkins-class:latest -o jenkins-class-latest.tar
+docker image pull spkane/dc-201-jenkins:latest
+docker image save spkane/dc-201-jenkins:latest -o jenkins-class-latest.tar
 docker image pull adejonge/helloworld:latest
 docker image save adejonge/helloworld:latest -o adejonge-helloworld-latest.tar
 docker image pull debian:latest
@@ -30,4 +30,6 @@ docker image pull spkane/train-os:latest
 docker image save spkane/train-os:latest -o spkane-train-os-latest.tar
 docker image pull traefik:latest
 docker image save traefik:latest -o traefik-latest.tar
+docker image pull spkane/quantum-game:latest
+docker image save spkane/quantum-game:latest -o quantum-game.tar
 
