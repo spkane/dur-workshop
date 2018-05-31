@@ -1,0 +1,27 @@
+version: '3'
+services:
+  quantum:
+    image: "spkane/quantum-game:latest"
+    ports:
+      - "95${SID}:8080"
+    networks:
+      - my-net
+    deploy:
+      replicas: 4
+      placement:
+        constraints:
+          - node.role != manager
+      labels:
+        - "SID=${SID}"
+      update_config:
+        parallelism: 2
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+networks:
+  my-net:
+    driver: overlay
+
