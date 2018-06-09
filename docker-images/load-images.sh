@@ -10,7 +10,6 @@ docker image load -i node-571.tar
 docker image load -i postgres-963.tar
 docker image load -i redis-325.tar
 docker image load -i registry-261.tar
-docker image load -i rocketchat-hubot-rocketchat-latest.tar
 docker image load -i rocketchat-rocketchat-latest.tar
 docker image load -i spkane-mybot-latest.tar
 docker image load -i spkane-starwars-latest.tar
